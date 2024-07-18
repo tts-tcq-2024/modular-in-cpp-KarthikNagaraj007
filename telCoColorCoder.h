@@ -2,7 +2,7 @@
 #define COLOR_CODER_H
 
 #include <string>
-#include "ColorPair.h"  // Include the new ColorPair header
+#include "colorPair.h"  // Include the new ColorPair header
 
 namespace TelCoColorCoder {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
