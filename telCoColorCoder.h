@@ -1,20 +1,12 @@
-#ifndef COLOR_CODER_H
-#define COLOR_CODER_H
+#ifndef TELCOCOLORCODER_H
+#define TELCOCOLORCODER_H
 
-#include <string>
-#include "colorPair.h"  // Include the new ColorPair header
+#include "colorPair.h"
 
 namespace TelCoColorCoder {
-    enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-    enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
-
-    extern const char* MajorColorNames[];
-    extern int numberOfMajorColors;
-    extern const char* MinorColorNames[];
-    extern int numberOfMinorColors;
-
     ColorPair GetColorFromPairNumber(int pairNumber);
     int GetPairNumberFromColor(MajorColor major, MinorColor minor);
+    void PrintColorManual();
 }
 
-#endif // COLOR_CODER_H
+#endif
